@@ -1,0 +1,3 @@
+	WebApplicationContext wac = ContextLoader.getCurrentWebApplicationContext(); 
+		DefaultSqlSessionFactory bean = (DefaultSqlSessionFactory)wac.getBean("sqlSessionFactory");
+		SqlSession openSession = bean.openSession();
